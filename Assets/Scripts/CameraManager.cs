@@ -19,8 +19,8 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-        //newPosition = pointToFollow.position + offset;
-        //this.transform.position = new Vector3(this.transform.position.x, newPosition.y, this.transform.position.z);
+        newPosition = pointToFollow.position + offset;
+        this.transform.position = new Vector3(this.transform.position.x, newPosition.y, this.transform.position.z);
         //if (Vector3.Distance(newPosition, this.transform.position) > distanceBeforeUpdate)
         //{
         //    //Debug.Log("Updating camera");
