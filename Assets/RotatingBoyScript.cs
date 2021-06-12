@@ -28,4 +28,5 @@ public class RotatingBoyScript : MonoBehaviour
             FindObjectOfType<CenterRing>().GetComponent<CenterRing>().RemovePoint(this.gameObject);
         }
     }
+
 }

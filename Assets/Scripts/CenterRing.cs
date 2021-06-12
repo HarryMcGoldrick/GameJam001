@@ -7,7 +7,7 @@ public class CenterRing : MonoBehaviour
     public float radiusMultiplier = 0.1f;
     public float initialRadius = 1f;
 
-    private float radius = 1;
+    public float radius = 1;
     public List<GameObject> points;
     public GameObject pointPrefab;
 
