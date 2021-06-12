@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraManager : MonoBehaviour
@@ -19,8 +17,8 @@ public class CameraManager : MonoBehaviour
 
     private void Update()
     {
-        //newPosition = pointToFollow.position + offset;
-        //this.transform.position = new Vector3(this.transform.position.x, newPosition.y, this.transform.position.z);
+        newPosition = pointToFollow.position + offset;
+        this.transform.position = new Vector3(this.transform.position.x, newPosition.y, this.transform.position.z);
         //if (Vector3.Distance(newPosition, this.transform.position) > distanceBeforeUpdate)
         //{
         //    //Debug.Log("Updating camera");
@@ -28,7 +26,7 @@ public class CameraManager : MonoBehaviour
         //    //isUpdating = true;
         //}
 
-        transform.position = Vector3.SmoothDamp(transform.position, newPosition,  ref velocity, delay);
+        transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, delay);
 
     }
 
@@ -43,7 +41,7 @@ public class CameraManager : MonoBehaviour
     //        }
     //        isUpdating = false;
     //    }
-      
+
     //    //Camera.main.transform.position = new Vector3(newPosition.x, newPosition.y, newPosition.z);
     //}
 }
