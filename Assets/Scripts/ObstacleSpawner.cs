@@ -6,9 +6,9 @@ public class ObstacleSpawner : MonoBehaviour
     public Vector3 Size;
     public Vector3 center;
 
-    private void Start()
+    private void Update()
     {
-        center = this.transform.localPosition;
+        center = this.transform.position;
     }
 
     public void SpawnObstacle()
@@ -21,6 +21,6 @@ public class ObstacleSpawner : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = new Color(1, 0, 0, 0.5f);
-        Gizmos.DrawCube(this.transform.localPosition, Size);
+        Gizmos.DrawCube(this.transform.position, Size);
     }
 }

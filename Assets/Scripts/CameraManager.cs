@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraManager : MonoBehaviour
@@ -28,7 +26,7 @@ public class CameraManager : MonoBehaviour
         //    //isUpdating = true;
         //}
 
-        transform.position = Vector3.SmoothDamp(transform.position, newPosition,  ref velocity, delay);
+        transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, delay);
 
     }
 
@@ -43,7 +41,7 @@ public class CameraManager : MonoBehaviour
     //        }
     //        isUpdating = false;
     //    }
-      
+
     //    //Camera.main.transform.position = new Vector3(newPosition.x, newPosition.y, newPosition.z);
     //}
 }
