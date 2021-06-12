@@ -870,15 +870,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Obstacles:
-  - weight: 1
+  - weight: 94
     obstacle: {fileID: 450012274947642372, guid: 81c579819750f3847b957a132554386b, type: 3}
-  - weight: 1
+  - weight: 14
     obstacle: {fileID: 432691436680242502, guid: 070a1279de9517342bad3587f2eb722e, type: 3}
-  - weight: 79
+  - weight: 8
     obstacle: {fileID: 9076792551086179371, guid: fb91d440e0665cd469d7d56c405e4e08, type: 3}
   Size: {x: 50, y: 0, z: 50}
   center: {x: 0, y: 0, z: 0}
-  spawnTime: 1
+  spawnTime: 0.01
 --- !u!1 &742706249
 GameObject:
   m_ObjectHideFlags: 0
