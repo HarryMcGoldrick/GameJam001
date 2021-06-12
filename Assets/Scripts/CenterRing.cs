@@ -19,11 +19,6 @@ public class CenterRing : MonoBehaviour
         UpdateCirclePositions();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     public void AddPoint()
     {
@@ -41,10 +36,19 @@ public class CenterRing : MonoBehaviour
         UpdateCirclePositions();
     }
 
+    public void RemovePoint(GameObject pointToRemove)
+    {
+        points.Remove(pointToRemove);
+        UpdateCirclePositions();
+    }
+
 
     void UpdateCirclePositions()
     {
+        if (points.Count == 0)
+            return;
         radius = radiusMultiplier * points.Count;
+        GetComponent<SphereCollider>().radius = radius;
         for (int i = 0; i < points.Count; i++)
         {
             float alpha = (2 * Mathf.PI) / points.Count;
@@ -52,5 +56,6 @@ public class CenterRing : MonoBehaviour
             float z = radius * Mathf.Sin(i * alpha);
             points[i].transform.position = new Vector3(this.transform.position.x + x, this.transform.position.y, this.transform.position.z + z);
         }
+
     }
 }
