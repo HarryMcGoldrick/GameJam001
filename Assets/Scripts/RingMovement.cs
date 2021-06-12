@@ -7,6 +7,8 @@ public class RingMovement : MonoBehaviour
     public float moveSpeed;
     public float tiltAmount;
 
+    public float fallSpeed;
+
     void Start()
     {
         
@@ -18,6 +20,6 @@ public class RingMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal") * Time.deltaTime * moveSpeed;
         float moveY = Input.GetAxisRaw("Vertical") * Time.deltaTime * moveSpeed;
 
-        this.transform.position += new Vector3(moveX, 0, moveY);
+        this.transform.position = new Vector3(this.transform.position.x + moveX, this.transform.position.y - (fallSpeed * Time.deltaTime), this.transform.position.z + moveY);
     }
 }

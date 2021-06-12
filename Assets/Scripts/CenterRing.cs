@@ -29,8 +29,6 @@ public class CenterRing : MonoBehaviour
     {
         GameObject point = Instantiate(pointPrefab);
         point.transform.SetParent(this.transform);
-        // Remove later
-        point.transform.localScale = new Vector3(1, 100, 1);
         points.Add(point);
         UpdateCirclePositions();
 
@@ -52,7 +50,7 @@ public class CenterRing : MonoBehaviour
             float alpha = (2 * Mathf.PI) / points.Count;
             float x = radius * Mathf.Cos(i * alpha);
             float z = radius * Mathf.Sin(i * alpha);
-            points[i].transform.position = new Vector3(this.transform.position.x + x, points[i].transform.position.y, this.transform.position.z + z);
+            points[i].transform.position = new Vector3(this.transform.position.x + x, this.transform.position.y, this.transform.position.z + z);
         }
     }
 }
