@@ -25,7 +25,13 @@ public class RotatingBoyScript : MonoBehaviour
             Rigidbody rb = GetComponent<Rigidbody>();
             rb.isKinematic = false;
             rb.AddForceAtPosition(Vector3.up * impactForce, collision.GetContact(0).point, ForceMode.Impulse);
+            this.gameObject.tag = "Untagged";
+            this.gameObject.transform.SetParent(null);
             FindObjectOfType<CenterRing>().GetComponent<CenterRing>().RemovePoint(this.gameObject);
+            int rand = Random.Range(1, 4);
+
+            FindObjectOfType<SoundManager>().PlayOnce("OnObstacleHitScream" + rand);
+            FindObjectOfType<SoundManager>().Play("OnObstacleHitImpact");
         }
     }
 
@@ -35,6 +41,7 @@ public class RotatingBoyScript : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle"))
         {
             FindObjectOfType<ScoreManager>().baseMultiplier += other.GetComponent<BonusRing>().multiplier;
+            FindObjectOfType<SoundManager>().PlayOnce("RingDing");
         }
     }
 

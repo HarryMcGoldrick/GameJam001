@@ -26,6 +26,8 @@ public class CenterRing : MonoBehaviour
         point.transform.SetParent(this.transform);
         points.Add(point);
         UpdateCirclePositions();
+        int rand = Random.Range(1, 3);
+        FindObjectOfType<SoundManager>().Play("OnRingAdd" + rand);
 
     }
 
