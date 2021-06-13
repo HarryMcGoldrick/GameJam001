@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -61,12 +60,18 @@ public class CenterRing : MonoBehaviour
         {
             DestroyImmediate(points[points.Count - 1]);
 
-        } else
+        }
+        else
         {
             Destroy(points[points.Count - 1]);
         }
         points.RemoveAt(points.Count - 1);
         UpdateCirclePositions();
+
+        if (points.Count == 0)
+        {
+            GameManager.Instance.SetGameState(GameState.GameOver);
+        }
     }
 
     public void RemovePoint(GameObject pointToRemove)
