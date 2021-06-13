@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 3038296597605360069}
   - component: {fileID: 67117694523757889}
   - component: {fileID: 7605324798896950808}
-  - component: {fileID: 7799189108872681655}
+  - component: {fileID: 1750051212260005811}
   m_Layer: 0
   m_Name: Luggage_1
   m_TagString: Obstacle
@@ -89,7 +89,7 @@ Transform:
   m_GameObject: {fileID: 2405452186897873791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 25, y: 25, z: 25}
   m_Children:
   - {fileID: 4324782667280880274}
   - {fileID: 6990613524692588825}
@@ -128,8 +128,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 20
   RandomRotationStrength: 2
---- !u!64 &7799189108872681655
-MeshCollider:
+--- !u!65 &1750051212260005811
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -138,10 +138,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1595783810130990727, guid: 9f27479aee483074ebd37f8ba3937054, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.02740873, y: 0.054490585, z: 0.05402407}
+  m_Center: {x: -0.00093843456, y: 0.029546423, z: 0.00013056517}
 --- !u!1 &3440382929868541803
 GameObject:
   m_ObjectHideFlags: 0
