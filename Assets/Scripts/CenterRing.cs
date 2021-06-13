@@ -31,7 +31,14 @@ public class CenterRing : MonoBehaviour
 
     public void RemovePoint()
     {
-        Destroy(points[points.Count - 1]);
+        if (Application.isEditor)
+        {
+            DestroyImmediate(points[points.Count - 1]);
+
+        } else
+        {
+            Destroy(points[points.Count - 1]);
+        }
         points.RemoveAt(points.Count - 1);
         UpdateCirclePositions();
     }
@@ -47,7 +54,7 @@ public class CenterRing : MonoBehaviour
     {
         if (points.Count == 0)
             return;
-        radius = radiusMultiplier * points.Count;
+        radius = (radiusMultiplier * points.Count) + initialRadius;
         GetComponent<SphereCollider>().radius = radius;
         for (int i = 0; i < points.Count; i++)
         {
@@ -55,6 +62,8 @@ public class CenterRing : MonoBehaviour
             float x = radius * Mathf.Cos(i * alpha);
             float z = radius * Mathf.Sin(i * alpha);
             points[i].transform.position = new Vector3(this.transform.position.x + x, this.transform.position.y, this.transform.position.z + z);
+            points[i].transform.rotation = Quaternion.LookRotation(this.transform.position - points[i].transform.position);
+            points[i].transform.eulerAngles = new Vector3(points[i].transform.eulerAngles.x + 90, points[i].transform.eulerAngles.y, points[i].transform.eulerAngles.z);
         }
 
     }

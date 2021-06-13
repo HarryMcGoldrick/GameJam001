@@ -13,5 +13,17 @@ public class ObstacleSpawnerEditor : Editor
             ObstacleSpawner spawner = FindObjectOfType<ObstacleSpawner>();
             spawner.SpawnObstacle();
         }
+
+        if (GUILayout.Button("Fill Array"))
+        {
+            MovingObstacle[] movingObstacles = Resources.LoadAll<MovingObstacle>("Prefabs");
+            SpawnObstacle[] spawnObstacles = new SpawnObstacle[movingObstacles.Length];
+            for (int i = 0; i < movingObstacles.Length; i++)
+            {
+                spawnObstacles[i] = new SpawnObstacle(3, movingObstacles[i].gameObject);
+            }
+            ObstacleSpawner spawner = FindObjectOfType<ObstacleSpawner>();
+            spawner.Obstacles = spawnObstacles;
+        }
     }
 }

@@ -81,4 +81,10 @@ public struct SpawnObstacle
     [Range(1,100)]
     public int weight;
     public GameObject obstacle;
+
+    public SpawnObstacle(int weight, GameObject obstacle)
+    {
+        this.weight = weight;
+        this.obstacle = obstacle;
+    }
 }
