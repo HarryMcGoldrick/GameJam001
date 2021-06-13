@@ -6,6 +6,8 @@ public class CenterRing : MonoBehaviour
 {
     public float radiusMultiplier = 0.1f;
     public float initialRadius = 1f;
+    public float maxSize = 100;
+
 
     public float radius = 1;
     public List<GameObject> points;
@@ -22,13 +24,35 @@ public class CenterRing : MonoBehaviour
 
     public void AddPoint()
     {
+        if (1 + points.Count > maxSize)
+        {
+            return;
+        }
+
         GameObject point = Instantiate(pointPrefab);
         point.transform.SetParent(this.transform);
         points.Add(point);
         UpdateCirclePositions();
         int rand = Random.Range(1, 3);
         FindObjectOfType<SoundManager>().Play("OnRingAdd" + rand);
+    }
 
+    public void AddManyPoints(int count)
+    {
+        if (points.Count > maxSize)
+        {
+            return;
+        }
+
+        for (int i = 0; i < count; i++)
+        {
+            GameObject point = Instantiate(pointPrefab);
+            point.transform.SetParent(this.transform);
+            points.Add(point);
+        }
+        int rand = Random.Range(1, 3);
+        FindObjectOfType<SoundManager>().Play("OnRingAdd" + rand);
+        UpdateCirclePositions();
     }
 
     public void RemovePoint()
