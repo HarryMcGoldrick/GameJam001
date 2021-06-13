@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d040c244e40e0f547936796ae14abb44
+guid: 6223ac1bd346dae4a81a2d3db66313db
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -11,77 +11,77 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Shirt
-    second: {fileID: 2100000, guid: d7ed953beac45ab48b6150d1c348e064, type: 2}
+    second: {fileID: 2100000, guid: ccf5939dabf790e41b27922c6429041a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface12
-    second: {fileID: 2100000, guid: d71bd483b0dc0b641abf375c0264ee4a, type: 2}
+    second: {fileID: 2100000, guid: 4c003a545f22c7f4089146556af1cf58, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: aiStandardSurface18
-    second: {fileID: 2100000, guid: e46102d0f4c50584fac4eb803ba855a6, type: 2}
+    second: {fileID: 2100000, guid: 6c0c63ea600cf5941af0f902b605ee0f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: eyesblack
-    second: {fileID: 2100000, guid: 1e5ff777b7eb3bf43ba0a3a480e44869, type: 2}
+    second: {fileID: 2100000, guid: 0a140c67d281f974190c044ca150f148, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: eyeswhite
-    second: {fileID: 2100000, guid: 7a5c1dcc1d5f7e2459bc9c27283f1b94, type: 2}
+    second: {fileID: 2100000, guid: b9f6b7673eaad4b459813e5b2d1c488b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: hair
-    second: {fileID: 2100000, guid: 281b1259c85919443acee463899325d2, type: 2}
+    second: {fileID: 2100000, guid: 6165cc1b14489c344a33a7ab822e738d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: helmet
-    second: {fileID: 2100000, guid: 7d543eddebf1cd143b530ae1e5892a32, type: 2}
+    second: {fileID: 2100000, guid: 2b4461f7784e29a4ba2b42c1e424a032, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: jacket
-    second: {fileID: 2100000, guid: c5ad0abf66c283b4da0fe344d05f1f44, type: 2}
+    second: {fileID: 2100000, guid: bb888b90f3f9c144fb482cc70c41fdcf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: jacket1
-    second: {fileID: 2100000, guid: 94871cbc044237a49a9a8bf17b8fb601, type: 2}
+    second: {fileID: 2100000, guid: 4586f6d15dc308f4aa2d1eeaa12ad724, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: jacket2
-    second: {fileID: 2100000, guid: 424dab195f190854bbda27ba22f35e78, type: 2}
+    second: {fileID: 2100000, guid: dd5154b3355f44543b4ef01a97159e76, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: shoes
-    second: {fileID: 2100000, guid: cfcd9c99cdefed24692a789ce0770eaa, type: 2}
+    second: {fileID: 2100000, guid: a62a4c7e3a7347345aced824c335541e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skin
-    second: {fileID: 2100000, guid: 0c2ffdf724d3208449b282c414e65dab, type: 2}
+    second: {fileID: 2100000, guid: cc56b731331d14f40997468a07a57402, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skin1
-    second: {fileID: 2100000, guid: 41c7068678a3755438964c3cff4412bb, type: 2}
+    second: {fileID: 2100000, guid: b65c21172923a9742b0434395e8f8eab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: skin2
-    second: {fileID: 2100000, guid: 5844763e8da470640ac50de53182de9d, type: 2}
+    second: {fileID: 2100000, guid: 6f25a577bb24a344a8748ad344da61fe, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: trousers
-    second: {fileID: 2100000, guid: d3f653907d9aa7347bf37e1a495239c2, type: 2}
+    second: {fileID: 2100000, guid: eff7660aa8c688c40a280eeccbca7967, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -113,8 +113,8 @@ ModelImporter:
       name: Falling
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
-      lastFrame: 59
+      firstFrame: 1
+      lastFrame: 118
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
