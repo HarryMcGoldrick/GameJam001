@@ -1861,6 +1861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radiusMultiplier: 0.35
   initialRadius: 2
+  maxSize: 100
   radius: 3.4
   points:
   - {fileID: 373787916}
@@ -4169,22 +4170,22 @@ MonoBehaviour:
   sounds:
   - name: OnObstacleHitScream1
     clip: {fileID: 8300000, guid: 1644c91cbe1e616469d3d9e22001065e, type: 3}
-    volume: 0.3
+    volume: 0.118
     pitch: 0.87
     source: {fileID: 0}
   - name: OnObstacleHitScream2
     clip: {fileID: 8300000, guid: 3224113414bad55468b8df3045208110, type: 3}
-    volume: 0.3
+    volume: 0.081
     pitch: 1
     source: {fileID: 0}
   - name: OnObstacleHitScream3
     clip: {fileID: 8300000, guid: d7a30e95a915a70478513236aecbe693, type: 3}
-    volume: 0.3
+    volume: 0.15
     pitch: 1
     source: {fileID: 0}
   - name: OnObstacleHitImpact
     clip: {fileID: 8300000, guid: b8f688708c638524c831caedf323c347, type: 3}
-    volume: 0.253
+    volume: 0.103
     pitch: 0.79
     source: {fileID: 0}
   - name: RingDing
@@ -4194,12 +4195,12 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: OnRingAdd1
     clip: {fileID: 8300000, guid: 67b767675e1d0ad4385e97a9e00a11d7, type: 3}
-    volume: 1
+    volume: 0.282
     pitch: 0.61
     source: {fileID: 0}
   - name: OnRingAdd2
     clip: {fileID: 8300000, guid: 44d755532579af647b322a1929457a2b, type: 3}
-    volume: 1
+    volume: 0.179
     pitch: 0.61
     source: {fileID: 0}
 --- !u!4 &1431088697
@@ -6205,7 +6206,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4195145, y: 0.75500005}
   m_AnchorMax: {x: 0.58682853, y: 0.83730584}
-  m_AnchoredPosition: {x: -0.19999695, y: -1.5}
+  m_AnchoredPosition: {x: -0.2000122, y: -1.5}
   m_SizeDelta: {x: -2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106206777
