@@ -10,7 +10,7 @@ public class ObstacleSpawnerEditor : Editor
 
         if (GUILayout.Button("Spawn Obstacle"))
         {
-            ObstacleSpawner spawner = FindObjectOfType<ObstacleSpawner>();
+            ObstacleSpawner spawner = FindObjectsOfType<ObstacleSpawner>()[0];
             spawner.SpawnObstacle();
         }
 
@@ -22,7 +22,8 @@ public class ObstacleSpawnerEditor : Editor
             {
                 spawnObstacles[i] = new SpawnObstacle(3, movingObstacles[i].gameObject);
             }
-            ObstacleSpawner spawner = FindObjectOfType<ObstacleSpawner>();
+            
+            ObstacleSpawner spawner = FindObjectsOfType<ObstacleSpawner>()[0];
             spawner.Obstacles = spawnObstacles;
         }
     }

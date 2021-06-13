@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8381774294754176955}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -57,12 +57,6 @@ MonoBehaviour:
     obstacle: {fileID: 8495792135263555087, guid: efa9003f58bcdac4b9d05e93a615c08b, type: 3}
   - weight: 3
     obstacle: {fileID: 9076792551086179371, guid: fb91d440e0665cd469d7d56c405e4e08, type: 3}
-  - weight: 3
-    obstacle: {fileID: 3120340005181024510, guid: 3c220f75da7cc5041a07c54d86a8aa51, type: 3}
-  - weight: 3
-    obstacle: {fileID: 8652880951054283154, guid: e729750d708c3804e968a75ad44b2dd9, type: 3}
-  - weight: 3
-    obstacle: {fileID: 5356698868130546774, guid: 9755ad5efb4ba0d409b94929e4322942, type: 3}
   - weight: 3
     obstacle: {fileID: 3090964474113552283, guid: 4a2f698c594c9dc488351dab118653fd, type: 3}
   - weight: 3

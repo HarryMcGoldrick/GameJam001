@@ -40,6 +40,11 @@ public class ObstacleSpawner : MonoBehaviour
         GameObject spawn = Instantiate(Obstacles[GetRandomWeightedIndex(weights)].obstacle);
         spawn.transform.position = spawnPos;
         spawn.transform.SetParent(obstacleParent);
+
+        if (spawn.CompareTag("Cloud"))
+        {
+            spawn.transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
+        }
     }
 
     private void OnDrawGizmosSelected()
