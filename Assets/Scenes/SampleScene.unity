@@ -1861,6 +1861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radiusMultiplier: 0.35
   initialRadius: 2
+  maxSize: 100
   radius: 3.4
   points:
   - {fileID: 373787916}
