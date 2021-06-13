@@ -85,10 +85,10 @@ MonoBehaviour:
     obstacle: {fileID: 5893497815949435792, guid: c6bd08c2cdbcd09499324d5887f1c129, type: 3}
   - weight: 3
     obstacle: {fileID: 8762668125935842697, guid: 780c252fdc5296b4f9bb20fd2e4e211f, type: 3}
-  - weight: 5
+  - weight: 1
     obstacle: {fileID: 7607762149134517080, guid: c4ec88849b2f64d479c7caf8166be007, type: 3}
   Size: {x: 50, y: 0, z: 50}
   center: {x: 0, y: 0, z: 0}
   spawnTime: 0.3
   rampTime: 0.001
-  minSpawnTime: 0.05
+  minSpawnTime: 0.02
