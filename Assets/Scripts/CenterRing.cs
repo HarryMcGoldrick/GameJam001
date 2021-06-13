@@ -20,6 +20,14 @@ public class CenterRing : MonoBehaviour
         UpdateCirclePositions();
     }
 
+    private void Update()
+    {
+        if (points.Count <= 0)
+        {
+            GameManager.Instance.SetGameState(GameState.GameOver);
+        }
+    }
+
 
     public void AddPoint()
     {

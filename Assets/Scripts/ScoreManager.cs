@@ -78,7 +78,7 @@ public class ScoreManager : MonoBehaviour
         string s = string.Format("{0:0.00}", number);
         if (s.EndsWith("00"))
         {
-            s = ((int)currentMultiplier).ToString();
+            s = ((int)number).ToString();
         }
         return s;
     }

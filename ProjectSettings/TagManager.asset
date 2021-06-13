@@ -6,11 +6,12 @@ TagManager:
   tags:
   - Center
   - Points
+  - Cloud
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
   - 

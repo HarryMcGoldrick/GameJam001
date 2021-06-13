@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   State: 0
+  Score: 0
 --- !u!4 &120221450
 Transform:
   m_ObjectHideFlags: 0
@@ -3596,6 +3597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMenuPanel: {fileID: 146895158}
   GameOverPanel: {fileID: 2143711266}
+  scoreText: {fileID: 531268854}
 --- !u!1 &2098596219
 GameObject:
   m_ObjectHideFlags: 0

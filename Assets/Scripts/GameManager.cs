@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -33,8 +34,14 @@ public class GameManager : MonoBehaviour
 
         if (state == GameState.GameOver)
         {
-            Debug.LogError("asjkhdbakjsd");
+            Score = FindObjectOfType<ScoreManager>().currentScore;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
+    }
+
+    public void GetGameState()
+    {
+        //return this.state;
     }
 }
 
