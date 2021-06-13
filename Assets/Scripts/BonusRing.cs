@@ -5,6 +5,7 @@ using UnityEngine;
 public class BonusRing : MonoBehaviour
 {
     public float radiusOffset = 5f;
+    public float multiplier = 0.2f;
 
     void Start()
     {

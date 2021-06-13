@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
+    public Transform obstacleParent;
     public SpawnObstacle[] Obstacles;
     public Vector3 Size;
     public Vector3 center;
@@ -38,6 +39,7 @@ public class ObstacleSpawner : MonoBehaviour
         
         GameObject spawn = Instantiate(Obstacles[GetRandomWeightedIndex(weights)].obstacle);
         spawn.transform.position = spawnPos;
+        spawn.transform.SetParent(obstacleParent);
     }
 
     private void OnDrawGizmosSelected()

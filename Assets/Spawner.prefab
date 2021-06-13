@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8381774294754176955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8381774294754176956}
+  - component: {fileID: 8381774294754176957}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8381774294754176956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8381774294754176955}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -100, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8381774294754176957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8381774294754176955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c0bdaed85bfe1448bd6a87baba4e76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleParent: {fileID: 0}
+  Obstacles:
+  - weight: 3
+    obstacle: {fileID: 6296229847626036476, guid: a259c370181fa324b85e302330e7a9d1, type: 3}
+  - weight: 3
+    obstacle: {fileID: 7107384519989086467, guid: b08763e47ffd1ff41811a7570d52968b, type: 3}
+  - weight: 3
+    obstacle: {fileID: 877871730576893802, guid: 5d182d9f5052bfd4697c458e1cd5a4fc, type: 3}
+  - weight: 3
+    obstacle: {fileID: 3149407675407710816, guid: 5a2a9288ce536c34eb38fa06d94f6b5c, type: 3}
+  - weight: 3
+    obstacle: {fileID: 8495792135263555087, guid: efa9003f58bcdac4b9d05e93a615c08b, type: 3}
+  - weight: 3
+    obstacle: {fileID: 9076792551086179371, guid: fb91d440e0665cd469d7d56c405e4e08, type: 3}
+  - weight: 3
+    obstacle: {fileID: 3120340005181024510, guid: 3c220f75da7cc5041a07c54d86a8aa51, type: 3}
+  - weight: 3
+    obstacle: {fileID: 8652880951054283154, guid: e729750d708c3804e968a75ad44b2dd9, type: 3}
+  - weight: 3
+    obstacle: {fileID: 5356698868130546774, guid: 9755ad5efb4ba0d409b94929e4322942, type: 3}
+  - weight: 3
+    obstacle: {fileID: 3090964474113552283, guid: 4a2f698c594c9dc488351dab118653fd, type: 3}
+  - weight: 3
+    obstacle: {fileID: 4006964520754549544, guid: 3fed9a5fb006e3d43846d1d4c81b9be2, type: 3}
+  - weight: 3
+    obstacle: {fileID: 2715932064886776157, guid: 89a8f5f1b3bc2bf4aabcb96606e53509, type: 3}
+  - weight: 3
+    obstacle: {fileID: 5550898339867759589, guid: 77aa271e47c97cb41a1d43e394f2e131, type: 3}
+  - weight: 3
+    obstacle: {fileID: 865193174783192331, guid: 2760ff6d120690444a47e48a588fb169, type: 3}
+  - weight: 3
+    obstacle: {fileID: 2248521992584929327, guid: a384decb4545e0a49805a2bd077ced14, type: 3}
+  - weight: 3
+    obstacle: {fileID: 8428212332857026030, guid: 7eac0d83b14eff44c893612fd37fd13c, type: 3}
+  - weight: 3
+    obstacle: {fileID: 469188154799458187, guid: d5be577dde1d39045bbad35ed1bd34de, type: 3}
+  - weight: 3
+    obstacle: {fileID: 2405452186897873791, guid: 30923ca1e0be88c419100b196a664ef7, type: 3}
+  - weight: 3
+    obstacle: {fileID: 8400577766366342622, guid: dc59e994bab69574c8aa23cfa5dc96f5, type: 3}
+  - weight: 3
+    obstacle: {fileID: 3169664047997549387, guid: 3bc89957442b913449d179a2d245fd5c, type: 3}
+  - weight: 3
+    obstacle: {fileID: 4998606819360441742, guid: 4dc528d723bd977409dccfcff4177533, type: 3}
+  - weight: 3
+    obstacle: {fileID: 8542482900203235850, guid: 80a777af6b68d6949b8105783307d3b3, type: 3}
+  - weight: 3
+    obstacle: {fileID: 1780339598581395661, guid: 3b6ddc434b8bcf34d817279e72a9b5c2, type: 3}
+  - weight: 3
+    obstacle: {fileID: 3769911598123613984, guid: 4ccfe8483b9e1af448f552c803813f78, type: 3}
+  - weight: 3
+    obstacle: {fileID: 7163792258962384180, guid: a11d891feef435f44b4a78f59831b6f5, type: 3}
+  - weight: 3
+    obstacle: {fileID: 1073592839145269353, guid: fe3a0c8cf42352f4bb49a6abcae6b15f, type: 3}
+  - weight: 3
+    obstacle: {fileID: 5893497815949435792, guid: c6bd08c2cdbcd09499324d5887f1c129, type: 3}
+  - weight: 3
+    obstacle: {fileID: 8762668125935842697, guid: 780c252fdc5296b4f9bb20fd2e4e211f, type: 3}
+  Size: {x: 50, y: 0, z: 50}
+  center: {x: 0, y: 0, z: 0}
+  spawnTime: 0.1

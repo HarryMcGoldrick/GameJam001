@@ -29,4 +29,13 @@ public class RotatingBoyScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        // Assume bonus ring
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            FindObjectOfType<ScoreManager>().baseMultiplier += other.GetComponent<BonusRing>().multiplier;
+        }
+    }
+
 }

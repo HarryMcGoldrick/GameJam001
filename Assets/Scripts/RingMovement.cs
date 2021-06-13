@@ -21,5 +21,6 @@ public class RingMovement : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical") * Time.deltaTime * moveSpeed;
 
         this.transform.position = new Vector3(this.transform.position.x + moveX, this.transform.position.y - (fallSpeed * Time.deltaTime), this.transform.position.z + moveY);
+
     }
 }

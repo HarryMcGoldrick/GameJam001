@@ -3,45 +3,33 @@ using UnityEngine;
 public class CameraManager : MonoBehaviour
 {
     public float delay;
-    public Vector3 offset;
-    public float distanceBeforeUpdate;
-
+    public Vector3 baseOffset;
+    public float offsetPerBoy;
     public Transform pointToFollow;
+    
     private Vector3 newPosition;
-    private bool isUpdating;
-
+    private Vector3 offset;
     private Vector3 velocity = Vector3.zero;
+    private CenterRing centerRing;
 
-
+    private void Start()
+    {
+        centerRing = FindObjectOfType<CenterRing>();
+    }
 
 
     private void Update()
     {
+        UpdateCameraForRadius();
         newPosition = pointToFollow.position + offset;
         this.transform.position = new Vector3(this.transform.position.x, newPosition.y, this.transform.position.z);
-        //if (Vector3.Distance(newPosition, this.transform.position) > distanceBeforeUpdate)
-        //{
-        //    //Debug.Log("Updating camera");
-        //    //StartCoroutine(SmoothCameraMovement(delay));
-        //    //isUpdating = true;
-        //}
-
         transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, delay);
-
     }
 
-    //public IEnumerator SmoothCameraMovement(float duration = 5f)
-    //{
-    //    if (!isUpdating)
-    //    {
-    //        for (float t = 0f; t < duration; t += Time.deltaTime)
-    //        {
-    //            Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, new Vector3(newPosition.x, newPosition.y, newPosition.z), t / duration);
-    //            yield return 0;
-    //        }
-    //        isUpdating = false;
-    //    }
+    void UpdateCameraForRadius()
+    {
+        offset = new Vector3(baseOffset.x, baseOffset.y + centerRing.radius * offsetPerBoy, baseOffset.z);
+    }
 
-    //    //Camera.main.transform.position = new Vector3(newPosition.x, newPosition.y, newPosition.z);
-    //}
+
 }
