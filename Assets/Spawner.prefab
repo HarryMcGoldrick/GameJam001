@@ -45,17 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleParent: {fileID: 0}
   Obstacles:
-  - weight: 3
-    obstacle: {fileID: 6296229847626036476, guid: a259c370181fa324b85e302330e7a9d1, type: 3}
-  - weight: 3
-    obstacle: {fileID: 7107384519989086467, guid: b08763e47ffd1ff41811a7570d52968b, type: 3}
-  - weight: 3
-    obstacle: {fileID: 877871730576893802, guid: 5d182d9f5052bfd4697c458e1cd5a4fc, type: 3}
-  - weight: 3
-    obstacle: {fileID: 3149407675407710816, guid: 5a2a9288ce536c34eb38fa06d94f6b5c, type: 3}
-  - weight: 3
-    obstacle: {fileID: 8495792135263555087, guid: efa9003f58bcdac4b9d05e93a615c08b, type: 3}
-  - weight: 3
+  - weight: 1
     obstacle: {fileID: 9076792551086179371, guid: fb91d440e0665cd469d7d56c405e4e08, type: 3}
   - weight: 3
     obstacle: {fileID: 3090964474113552283, guid: 4a2f698c594c9dc488351dab118653fd, type: 3}
@@ -63,7 +53,7 @@ MonoBehaviour:
     obstacle: {fileID: 4006964520754549544, guid: 3fed9a5fb006e3d43846d1d4c81b9be2, type: 3}
   - weight: 3
     obstacle: {fileID: 2715932064886776157, guid: 89a8f5f1b3bc2bf4aabcb96606e53509, type: 3}
-  - weight: 3
+  - weight: 15
     obstacle: {fileID: 5550898339867759589, guid: 77aa271e47c97cb41a1d43e394f2e131, type: 3}
   - weight: 3
     obstacle: {fileID: 865193174783192331, guid: 2760ff6d120690444a47e48a588fb169, type: 3}
@@ -97,4 +87,6 @@ MonoBehaviour:
     obstacle: {fileID: 8762668125935842697, guid: 780c252fdc5296b4f9bb20fd2e4e211f, type: 3}
   Size: {x: 50, y: 0, z: 50}
   center: {x: 0, y: 0, z: 0}
-  spawnTime: 0.1
+  spawnTime: 0.3
+  rampTime: 0.001
+  minSpawnTime: 0.05

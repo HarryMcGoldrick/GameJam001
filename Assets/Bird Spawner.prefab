@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9076111239093002388
+--- !u!1 &4888356089406097444
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9076111239093002387}
-  - component: {fileID: 2143878198593239353}
+  - component: {fileID: 4888356089406097443}
+  - component: {fileID: 7411850584628292874}
   m_Layer: 0
-  m_Name: Cloud spawner
+  m_Name: Bird Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9076111239093002387
+--- !u!4 &4888356089406097443
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9076111239093002388}
+  m_GameObject: {fileID: 4888356089406097444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -100, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,26 +31,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2143878198593239353
+--- !u!114 &7411850584628292874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9076111239093002388}
+  m_GameObject: {fileID: 4888356089406097444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9672b294461f3164598829172b3937c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b978bc3c1e6d3446b97e28e383c2f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleParent: {fileID: 0}
   Obstacles:
-  - weight: 33
-    obstacle: {fileID: 3120340005181024510, guid: 3c220f75da7cc5041a07c54d86a8aa51, type: 3}
-  - weight: 33
-    obstacle: {fileID: 8652880951054283154, guid: e729750d708c3804e968a75ad44b2dd9, type: 3}
-  - weight: 33
-    obstacle: {fileID: 5356698868130546774, guid: 9755ad5efb4ba0d409b94929e4322942, type: 3}
+  - weight: 0
+    obstacle: {fileID: 848566273840857228, guid: fe785eec3727340428072d87b8e3f625, type: 3}
+  - weight: 30
+    obstacle: {fileID: 6482424976122155058, guid: 96b2695ec64861044843ed9fdaa0a0a2, type: 3}
   Size: {x: 0, y: 0, z: 0}
   center: {x: 0, y: 0, z: 0}
-  spawnTime: 1
+  spawnTime: 0

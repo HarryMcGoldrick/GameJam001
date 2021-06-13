@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3515860545525510773}
   - component: {fileID: 1670325014115321535}
   - component: {fileID: 4666536462756705113}
-  - component: {fileID: 256719318236690438}
   - component: {fileID: 5521156027714186070}
   m_Layer: 0
   m_Name: Bird_3
@@ -103,20 +102,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &256719318236690438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877871730576893802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621f8e4a4f51eea4091cd02fabaa4ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 20
-  RandomRotationStrength: 2
 --- !u!64 &5521156027714186070
 MeshCollider:
   m_ObjectHideFlags: 0

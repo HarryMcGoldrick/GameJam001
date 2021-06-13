@@ -1,18 +1,15 @@
 using UnityEngine;
 
-public class ObstacleSpawner : MonoBehaviour
+public class BirdSpawner : MonoBehaviour
 {
     public Transform obstacleParent;
     public SpawnObstacle[] Obstacles;
     public Vector3 Size;
     public Vector3 center;
     public float spawnTime;
-    public float rampTime;
-    public float minSpawnTime;
 
 
-    private float spawnTimer = 0f;
-    private float rampTimer = 0f;
+    private float timer = 0f;
     private int[] weights;
 
     private void Start()
@@ -22,53 +19,29 @@ public class ObstacleSpawner : MonoBehaviour
         {
             weights[i] = Obstacles[i].weight;
         }
+        timer = spawnTime;
     }
 
     private void Update()
     {
         center = this.transform.position;
 
-        spawnTimer += Time.deltaTime;
-        rampTimer += Time.deltaTime;
-        if (spawnTimer >= spawnTime)
+        timer += Time.deltaTime;
+        if (timer >= spawnTime)
         {
-            spawnTimer = 0f;
-            SpawnObstacle();
+            timer = 0f;
+            SpawnBird();
         }
-        if (rampTimer >= 1f)
-        {
-            if (spawnTime-rampTime > minSpawnTime)
-            {
-                spawnTime -= rampTime;
-            } else
-            {
-                spawnTime = minSpawnTime;
-            }
-            rampTimer = 0f;
-        }
-
     }
 
-    public void SpawnObstacle()
+    public void SpawnBird()
     {
         Vector3 spawnPos = center + new Vector3(Random.Range(-Size.x / 2, Size.x / 2), 0, Random.Range(-Size.z / 2, Size.z / 2));
-        
+
         GameObject spawn = Instantiate(Obstacles[GetRandomWeightedIndex(weights)].obstacle);
         spawn.transform.position = spawnPos;
         spawn.transform.SetParent(obstacleParent);
-
-        if (spawn.CompareTag("Cloud"))
-        {
-            spawn.transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
-
-            // spawn 2 more, dont kill me mark for what i have done
-            for (int i = 0; i < 10; i++)
-            {
-
-            }
-           
-        } else { 
-        }
+        spawn.transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
     }
 
     private void OnDrawGizmosSelected()
@@ -106,16 +79,3 @@ public class ObstacleSpawner : MonoBehaviour
     }
 }
 
-[System.Serializable]
-public struct SpawnObstacle
-{
-    [Range(1,100)]
-    public int weight;
-    public GameObject obstacle;
-
-    public SpawnObstacle(int weight, GameObject obstacle)
-    {
-        this.weight = weight;
-        this.obstacle = obstacle;
-    }
-}
